@@ -28,8 +28,7 @@ public class Employee {
 
     private double salary;
 
-    @Column(name="hiring_date")
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
-    private Date hiringDate;
+    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "mm-dd-yyyy")
+    private Date hiring;
 
 }
