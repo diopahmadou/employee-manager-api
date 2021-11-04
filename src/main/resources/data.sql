@@ -6,7 +6,7 @@ CREATE TABLE employees (
   department VARCHAR(100) NOT NULL,
   position VARCHAR(100) NOT NULL,
   salary FLOAT NOT NULL,
-  hiring DATETIME
+  hiring TIMESTAMP
 );
 
 INSERT INTO employees (id, name, department, position, salary, hiring) VALUES

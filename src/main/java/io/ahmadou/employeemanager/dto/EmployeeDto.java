@@ -3,7 +3,8 @@ package io.ahmadou.employeemanager.dto;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.ZonedDateTime;
+
 
 @Data
 @Builder
@@ -13,5 +14,5 @@ public class EmployeeDto {
     private String department;
     private String position;
     private double salary;
-    private Date hiring;
+    private ZonedDateTime hiring;
 }

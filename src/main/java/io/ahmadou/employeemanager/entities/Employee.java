@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 @Entity
@@ -28,7 +31,6 @@ public class Employee {
 
     private double salary;
 
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "mm-dd-yyyy")
-    private Date hiring;
+    private String hiring;
 
 }
