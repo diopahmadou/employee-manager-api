@@ -23,16 +23,10 @@ public class EmployeeController {
         return service.getEmployee();
     }
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     @ResponseBody
     public EmployeeDto getEmployeeById(@PathVariable Integer id) {
         return service.findByID(id);
-    }
-
-    @GetMapping("/name/{name}")
-    @ResponseBody
-    public EmployeeDto getEmployeeByName(@PathVariable String name) {
-        return service.getEmployeeByName(name);
     }
 
     @PostMapping
